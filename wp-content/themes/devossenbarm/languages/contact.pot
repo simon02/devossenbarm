@@ -1,0 +1,6 @@
+
+msgid "Contact"
+msgstr ""
+
+msgid "Get in touch with B&amp;B De Vossenbarm"
+msgstr ""

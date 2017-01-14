@@ -1,0 +1,32 @@
+/*
+  Override margin around the navigation ul
+*/
+
+#nav ul {
+  margin: 0;
+}
+
+aside, .aside {
+  width: 100%;
+  padding-left: 0;
+}
+
+.text-center { text-align: center; }
+a.text-center { display: inline-block; }
+.box-center { margin: auto; }
+.m0 { margin-bottom: 0px; }
+.m5 { margin-bottom: 5px; }
+.m10 { margin-bottom: 10px; }
+.m20 { margin-bottom: 20px; }
+.m30 { margin-bottom: 30px; }
+.m45 { margin-bottom: 45px; }
+.m60 { margin-bottom: 60px; }
+.paddingtp0 { padding-top: 0px; padding-bottom: 0px; }
+.paddingtp10 { padding-top: 10px; padding-bottom: 10px; }
+.paddingtp20 { padding-top: 20px; padding-bottom: 20px; }
+.paddingtp30 { padding-top: 30px; padding-bottom: 30px; }
+.paddingtp45 { padding-top: 45px; padding-bottom: 45px; }
+.paddingtp60 { padding-top: 60px; padding-bottom: 60px; }
+
+
+aside .blocktitle .small { width:100%; height:100%; color:rgba(255,255,255,.5); display:block; position:absolute; top:0; left:0; z-index:1; }

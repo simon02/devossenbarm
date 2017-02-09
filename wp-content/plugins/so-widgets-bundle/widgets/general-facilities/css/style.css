@@ -3,7 +3,11 @@
   padding: 25px 25px 15px;
   margin-bottom: 20px;
 }
-
+#general_facilities.horizontal {   
+  background-color: unset;
+  padding: 0;
+  text-align: center;
+}
 #general_facilities h3 {
     margin: 0 0 20px;
     padding: 0;
@@ -18,9 +22,19 @@
     color: #999;
     font-size: 16px;
 }
-
 #general_facilities ul li {
   list-style: none;
+}
+#general_facilities.horizontal ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+}
+#general_facilities.horizontal ul li span {
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    float: initial;
 }
 
 #general_facilities ul li i {

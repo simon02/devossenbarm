@@ -71,7 +71,7 @@ Base Hotel: HTML Template by Klaye Morrison (http://klayemorrison.com)
 
 */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,800|Poly:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,700,800|Poly:400,400italic);
 
 * { margin:0; padding:0; text-decoration:none; list-style:none; outline:none; }
 html, body { width:100%; height:100%; }
@@ -83,11 +83,11 @@ a img { border:none; }
 
 #nav { width:100%; height:110px; position:fixed; background:#FFF; box-shadow:0 0 1px rgba(0,0,0,.2),0 0 15px rgba(0,0,0,.15); z-index:100; -webkit-transform:translateZ(0); }
 #nav .centre { height:100%; }
-#nav .logo { position:absolute; top:50%; left:50px; transform:translate(0,-50%); -webkit-transform:translate(0,-50%); -ms-transform:translate(0,-50%); }
+#nav .logo {position:absolute;top:50%;/* left:50px; */transform:translate(0,-50%);-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);}
 #nav nav { position:absolute; top:50%; right:308px; margin-top:-20px; }
 #nav nav li { float:left; position:relative; }
 #nav nav li.mobile { display:none; }
-#nav nav li a { height:40px; padding:0 14px; font:12px/40px 'Open Sans', sans-serif; color:#000; letter-spacing:.8px; text-transform:uppercase; display:block; position:relative; }
+#nav nav li a {height:40px;padding:0 14px;font: 14px/40px 'Open Sans', sans-serif;color:#000;letter-spacing:.8px;text-transform:uppercase;display:block;position:relative;}
 #nav nav li a:after { content:""; width:calc(100% - 24px); height:2px; position:absolute; bottom:7px; left:12px; }
 #nav nav li.active a { font-weight:800; opacity:1; }
 #pull { width:25px; font-size:25px; position:absolute; top:7px; right:236px; display:none; cursor:pointer; }
@@ -257,10 +257,10 @@ form button { padding:0; cursor:pointer; border:none; }
 main { font:14px/25px 'Open Sans', sans-serif; color:#000; letter-spacing:.4px; background:top left repeat-x; }
 main .centre { padding:70px 50px; }
 main .centre:after { content:""; clear:both; display:block; }
-main h1, main h2 { margin-bottom:30px; font:600 22px/30px 'Open Sans', sans-serif; text-transform:uppercase; letter-spacing:1.2px; position:relative; }
+main h1, main h2 { margin-bottom:20px; font:600 22px/30px 'Open Sans', sans-serif; text-transform:uppercase; letter-spacing:1.2px; position:relative; }
 main h1 strong, main h2 strong { font-weight:800; }
-main h3 { margin-bottom:28px; font:700 16px/26px 'Open Sans', sans-serif; text-transform:uppercase; letter-spacing:1px; }
-main p { margin:0 0 30px; }
+main h3 { margin-bottom:16px; font:700 16px/26px 'Open Sans', sans-serif; text-transform:uppercase; letter-spacing:1px; }
+main p { margin:0 0 15px; }
 main p.fine { font-size:12px; }
 main p a, main p a i, main ul a { font-weight:bold; border-bottom:1px solid #E5E5E5; }
 main p.credit { margin:-20px 0 38px; padding:7px 12px 8px; background:#EEE; border-radius:5px; display:inline-block; box-shadow:1px 1px 0 rgba(0,0,0,.12); }

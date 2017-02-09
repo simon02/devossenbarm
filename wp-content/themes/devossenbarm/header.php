@@ -26,20 +26,19 @@
 
 	<header id="nav" class="site-header" role="banner">
 		<div class="centre">
-			<div class="site-branding logo">
+			<div class="site-branding">
 				<?php
-				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<p class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-				endif;
-
 				$description = get_bloginfo( 'description', 'display' );
-				if ( $description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				if ( is_front_page() && is_home() ) : ?>
+					<h1 class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
+						<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
+					</a></h1>
+				<?php else : ?>
+					<p class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
+						<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
+					</a></p>
 				<?php
-				endif; ?>
+				endif;?>
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="" role="navigation">

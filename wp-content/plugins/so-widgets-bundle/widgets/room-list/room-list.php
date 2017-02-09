@@ -85,6 +85,18 @@ class Room_List_Widget extends SiteOrigin_Widget {
         )
       ),
 
+      'options' => array(
+        'type' => 'section',
+        'label' => __('Extra Options', 'so-widgets-bundle'),
+        'hide' => true,
+        'fields' => array(
+          'grid' => array(
+            'type' => 'checkbox',
+            'label' => __('Show as Grid', 'so-widgets-bundle'),
+          ),
+        ),
+      )
+
     );
   }
 

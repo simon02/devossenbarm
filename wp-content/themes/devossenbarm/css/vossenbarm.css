@@ -2,6 +2,47 @@
   Override margin around the navigation ul
 */
 
+@import 'homepage.css';
+@import 'contact.css';
+
+@import 'icon_set_1.css';
+@import 'icon_set_2.css';
+
+body {
+  font-size: 16px;
+}
+
+#header .h1 {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+@media (max-width: 900px) 
+#header .h1 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+#nav .logo {
+  left: 0;
+  text-align: center;
+}
+#nav .logo a {
+  color: #000 !important;
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+#nav .logo a .site-description {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+}
+
+#main {
+  font: 16px/28px 'Open Sans', sans-serif;
+}
+
 #nav ul {
   margin: 0;
 }
@@ -21,12 +62,19 @@ a.text-center { display: inline-block; }
 .m30 { margin-bottom: 30px; }
 .m45 { margin-bottom: 45px; }
 .m60 { margin-bottom: 60px; }
-.paddingtp0 { padding-top: 0px; padding-bottom: 0px; }
-.paddingtp10 { padding-top: 10px; padding-bottom: 10px; }
-.paddingtp20 { padding-top: 20px; padding-bottom: 20px; }
-.paddingtp30 { padding-top: 30px; padding-bottom: 30px; }
-.paddingtp45 { padding-top: 45px; padding-bottom: 45px; }
-.paddingtp60 { padding-top: 60px; padding-bottom: 60px; }
+.paddingtb0 { padding-top: 0px; padding-bottom: 0px; }
+.paddingtb10 { padding-top: 10px; padding-bottom: 10px; }
+.paddingtb20 { padding-top: 20px; padding-bottom: 20px; }
+.paddingtb30 { padding-top: 30px; padding-bottom: 30px; }
+.paddingtb45 { padding-top: 45px; padding-bottom: 45px; }
+.paddingtb60 { padding-top: 60px; padding-bottom: 60px; }
 
 
 aside .blocktitle .small { width:100%; height:100%; color:rgba(255,255,255,.5); display:block; position:absolute; top:0; left:0; z-index:1; }
+
+hr.mini-divider { 
+  border: none;
+  width: 250px;
+  max-width: 50%;
+  margin: auto;
+}

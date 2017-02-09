@@ -6,7 +6,7 @@
 
 ?>
 
-<section id="rooms" class="list">
+<section id="rooms" class="list <?php echo $instance['options']['grid'] ? "grid" : "no-grid" ?>">
   <?php foreach( $instance['rooms'] as $i => $room ) : ?>
     <div class="item">
       <div class="container">

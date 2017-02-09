@@ -1,0 +1,44 @@
+
+.testimonial .title {
+  max-width: 800px;
+  margin: auto;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  position: relative;
+}
+.testimonial .title .icon-left, .testimonial .title .icon-right {
+  font-size: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  color: #A59D7E;
+  opacity: .5;
+}
+.testimonial .title .icon-left {
+  left: -75px;
+}
+.testimonial .title .icon-right {
+  right: -75px;
+}
+.testimonial .content {
+  margin-bottom: 10px;
+}
+.testimonial .score.booking {
+  background: #003580;
+  border-radius: 4px 4px 4px 0;
+  border-radius: 20% 20% 20% 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2.2em;
+  text-align: center;
+  width: 2.143em;
+  display: inline-block;
+}
+.testimonial .author {
+  margin-top: 20px;
+  color: #999;
+}
+.testimonial .author .name {
+  font-weight: 700;
+}

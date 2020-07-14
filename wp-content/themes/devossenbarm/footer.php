@@ -18,7 +18,7 @@
       <div id='footer'>
         <div class="centre">
           <!-- Subscribe / Social | START -->
-          <div class="news">
+          <!-- <div class="news">
             <div class="title"><span>News &amp; Offers</span></div>
               <div class="subscribe">
                   <form>
@@ -31,15 +31,19 @@
                   <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
                   <a href="#" title="Pinterest"><i class="fa fa-pinterest-p"></i></a>
               </div>
-          </div>
+          </div> -->
           <!-- Subscribe / Social | END -->
           <!-- Contact Details | START -->
           <div class="contact">
-              <p><strong class="phone"><a href="tel:+32 475 31 45 36">+32 475 31 45 36</a></strong><br />
-                <a href="mailto:info@devossenbarm.be">info@devossenbarm.be</a><br /><br />
-                <i class="fa fa-map-marker"></i>Hildeghemweg 5<br /> 8490 Snellegem<br />BELGIUM<br />
-                <!-- <a href="https://www.google.com/maps/dir/Current+Location/-31.957482,115.856868" target="_blank"><strong>Get Directions</strong></a> -->
-                </p>
+            <div>
+              <strong class="phone"><a href="tel:+32 475 31 45 36">+32 475 31 45 36</a></strong><br />
+              <a href="mailto:info@devossenbarm.be">info@devossenbarm.be</a><br />
+              <a href="https://www.facebook.com/pg/devossenbarm" target="_blank"><i class="fa fa-facebook-square"></i> <strong><?php echo __('Visit us on Facebook', 'devossenbarm'); ?></strong></a>
+            </div>
+            <div>
+              <i class="fa fa-map-marker"></i>Hildeghemweg 5<br /> 8490 Snellegem<br />BELGIUM<br />
+            </div>
+            <div class="clear"></div>
           </div>
           <!-- Contact Details | END -->
           <div class="dark"></div>
@@ -48,7 +52,7 @@
       <!-- Footer Links | START -->
       <div id="footerlinks">
           <div class="centre">
-              <span>Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> <strong>De Vossenbarm</strong></span><a href="/index.html">Home</a><a href="/sitemap.html">Sitemap</a>
+              <span>Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> <strong>De Vossenbarm</strong></span>
             </div>
         </div>
         <!-- Footer Links | END -->

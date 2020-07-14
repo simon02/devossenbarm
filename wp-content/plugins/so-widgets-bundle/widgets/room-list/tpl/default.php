@@ -22,7 +22,7 @@
                 <h3 class="title"><?php echo $room['title'] ?><br />
                 <span><?php echo $room['subtitle'] ?></span></h3>
                 <p><?php echo $room['description'] ?></p>
-                <div class="button"><span data-hover="View Room">View Room</span></div>
+                <div class="button"><?php echo __('Bekijk kamer', 'devossenbarm') ?></div>
               </a>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <?php
 /*
 Widget Name: Room Reservation 
-Description: Shows a form that people can use to check if a room is available
+Description: Shows a form people can use to check if a room is available
 Author: Simon Buelens
 */
 
@@ -56,11 +56,24 @@ class Reservation_Room_Widget extends SiteOrigin_Widget {
         'label' => __('Room ID from Cubulis'),
       ),
 
+      'price' => array(
+        'type' => 'text',
+        'label' => __('Starting price for the room'),
+      ),
+
     );
   }
 
   function get_style_name($instance) {
     return '';
+  }
+
+  function get_template_variables( $instance, $args ){
+    return array(
+      'room_id' => $instance['room_id'],
+      'price' => $instance['price'],
+      'lang' => explode('_', pll_current_language('locale'))[0],
+    );
   }
 
 }

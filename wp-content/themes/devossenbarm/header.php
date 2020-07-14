@@ -30,11 +30,13 @@
 				<?php
 				$description = get_bloginfo( 'description', 'display' );
 				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
+					<h1 class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<span class="title"><?php bloginfo( 'name' ); ?></span>
 						<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
 					</a></h1>
 				<?php else : ?>
-					<p class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
+					<p class="site-title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<span class="title"><?php bloginfo( 'name' ); ?></span>
 						<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
 					</a></p>
 				<?php

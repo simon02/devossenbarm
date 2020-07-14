@@ -30,13 +30,13 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 			</div>
+			<?php
+			get_sidebar();
+			get_footer();
+			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
-?>
 
 <script type="text/javascript"
     src="https://reservations.cubilis.eu/Widget/RateboxScript/5625" async>

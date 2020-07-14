@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Top Bar Template
+ * Template Name: Page With Top Bar
  *
  * A full width template
  *
@@ -13,7 +13,7 @@ $thumb_url = $thumb_url_array[0];
 ?>
 
  <header>
-    <div id="header" style="background-image: url(<?php echo $thumb_url; ?>)">
+    <div id="header">
        <div class="h1">
               <h1><span><?php echo get_the_title(); ?></span>
               <span class="tagline"><?php echo get_secondary_title(); ?></span></h1>
@@ -27,9 +27,11 @@ $thumb_url = $thumb_url_array[0];
           the_content();
         ?>
       </div>
+
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php
-get_footer();
-?>
+
+    <?php
+    get_footer();
+    ?>

@@ -1,9 +1,5 @@
 /*
-Theme Name: devossenbarm
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Simon Buelens
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -21,9 +17,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
 
 @import url('./css/global.css');
-@import url('./css/vossenbarm.css');
 @import url('./css/pattern-china.css');
-@import url('./css/colour-gold.css');
+@import url('./css/vossenbarm.css');
+@import url('./css/colour-vossenbarm.css');
 
 
 

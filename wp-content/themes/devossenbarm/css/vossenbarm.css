@@ -3,17 +3,22 @@
 */
 
 @import 'homepage.css';
+@import 'rooms.css';
 @import 'contact.css';
+@import 'font-stuff.css';
 
 @import 'icon_set_1.css';
 @import 'icon_set_2.css';
+
+@import 'slick-theme.css';
+@import 'slick.css';
 
 body {
   font-size: 16px;
 }
 
 #header .h1 {
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 @media (max-width: 900px) 
@@ -23,24 +28,28 @@ body {
 }
 
 #nav .logo {
-  left: 0;
+  /* left: 0; */
   text-align: center;
+  font-family: 'Courgette', cursive;
 }
 #nav .logo a {
   color: #000 !important;
-  text-align: center;
-  font-weight: 300;
-  font-size: 25px;
+}
+#nav .logo a .title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 30px;
 }
 #nav .logo a .site-description {
-  font-size: 14px;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
   display: block;
+  letter-spacing: 1px;
 }
 
 #main {
   font: 16px/28px 'Open Sans', sans-serif;
+  max-width: 1280;
 }
 
 #nav ul {
@@ -70,11 +79,56 @@ a.text-center { display: inline-block; }
 .paddingtb60 { padding-top: 60px; padding-bottom: 60px; }
 
 
-aside .blocktitle .small { width:100%; height:100%; color:rgba(255,255,255,.5); display:block; position:absolute; top:0; left:0; z-index:1; }
+aside .blocktitle .small {width:100%;height:100%;color: rgba(255,255,255,0.7);display:block;position:absolute;top:0;left:0;z-index:1;font-size: 14px;}
 
 hr.mini-divider { 
   border: none;
   width: 250px;
   max-width: 50%;
   margin: auto;
+}
+
+@media only screen and (min-width:1150px) {
+body[class*='background-']:before, body[class*='background-']:after { content:""; width:600px; height:100%; background-size:cover; position:fixed; top:0; }
+body[class*='background-']:before { left:0; background-position:left; }
+body[class*='background-']:after { right:0; background-position:right; }
+body { background:#666 top left repeat-x fixed; }
+#container { max-width:1420px; margin:0 auto; box-shadow:0 0 1px rgba(0,0,0,.2),0 0 15px rgba(0,0,0,.2); z-index:1; }
+#nav { background:none; box-shadow:none; }
+#nav * { z-index:2; }
+#nav .centre {max-width:1420px !important;background:#FFF;border-bottom: 1px solid #eee;box-shadow: 0 1px 8px rgba(0,0,0,0.1);}
+#nav .shadow { width:100%; height:100%; padding-bottom:20px; position:absolute; top:0; left:0; overflow:hidden; z-index:1; }
+#nav .shadow:before { content:""; width:100%; height:calc(100% - 20px); box-shadow:0 0 1px rgba(0,0,0,.2),0 0 15px rgba(0,0,0,.15); position:absolute; top:0; left:0; }
+#header { background-size:auto; }
+.page-gallery main { padding:60px; }
+}
+
+@media only screen and (max-width:1500px) {
+#container {max-width:1150px !important;}
+#nav .centre { max-width:1150px !important; }
+#check { width:auto; padding:0 50px; }
+#check .centre { max-width:none; }
+}
+
+body {
+  background-image: url('../images/background-tiled.jpg') !important;
+}
+
+#footer .contact {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  float: none;
+  width: 100%;
+  margin-top: 30px;
+}
+#footer .contact > div {
+  width: 50%;
+  min-width: 250px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#footer .dark {
+  width: 100%;
 }

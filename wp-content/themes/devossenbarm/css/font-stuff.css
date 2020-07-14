@@ -1,0 +1,19 @@
+
+.list .item .details .title {font: normal 30px/38px 'Courgette', sans-serif;text-transform:none;letter-spacing: 1.5px;}
+
+main h1, main h2, main h3, main h4 {
+  font-family: 'Courgette', cursive;
+  text-transform: initial;
+}
+h1, main h1, main h2 {
+  font: 400 36px/50px 'Courgette', sans-serif;
+}
+main h3 {
+  font: 400 28px/40px 'Courgette', sans-serif;
+}
+main h4 {
+  font: 400 24px/36px 'Courgette', sans-serif;
+}
+#header h1 {
+    font: 400 42px/48px 'Courgette', sans-serif;
+}
